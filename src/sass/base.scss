@@ -54,16 +54,16 @@ address {
 
   .hero-logo {
     position: absolute;
-    top: 62%;
-    left: 40%;
+    top: 65%;
+    right: 10%;
 
-    width: 428px;
-    height: 100px;
+    width: 500px;
+    height: 111px;
 
     @media (max-width: $screen-xs-max) {
       width: calc(100% - 40px);
       height: auto;
-      left: 20px;
+      right: 20px;
       bottom: 17%;
     }
   }
