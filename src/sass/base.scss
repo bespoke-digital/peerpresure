@@ -1,0 +1,98 @@
+
+$brand-primary: #83c1aa;
+
+
+@import 'bootstrap';
+
+body {
+  background-color: #e6e4d4;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p, address {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 22px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.hero-main {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  background-image: url('../img/hero-cover.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  .hero-accent {
+    position: absolute;
+    top: -100%;
+    left: -61%;
+    height: 200%;
+    width: 100%;
+
+    background-color: rgba($brand-primary, 0.7);
+    transform: rotate(20deg);
+  }
+
+  .hero-logo {
+    position: absolute;
+    top: 62%;
+    left: 40%;
+
+    width: 428px;
+    height: 50px;
+
+    @media (max-width: $screen-xs-max) {
+      width: calc(100% - 40px);
+      height: auto;
+      left: 20px;
+      bottom: 17%;
+    }
+  }
+}
+
+.sales-copy {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  h2 {
+    margin-top: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 50px 20px;
+  }
+}
+
+
+.contact {
+  padding: 50px 0 0 42%;
+
+  background-image: url('../img/scooter-cover.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 50px 20px;
+  }
+
+  .contact-container {
+    max-width: 530px;
+  }
+}
