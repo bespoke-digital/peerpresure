@@ -140,9 +140,18 @@ address {
     padding: 0 0 15px;
 
     text-align: right;
+    font-weight: 300;
 
     a {
       color: white;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .fa {
+      margin-left: 5px;
     }
   }
 
