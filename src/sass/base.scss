@@ -97,7 +97,7 @@ address {
   background-position: center center;
   background-size: cover;
 
-  // color: white;
+  color: $gray-darker;
 
   @media (max-width: $screen-xs-max) {
     padding: 50px 20px;
@@ -144,7 +144,7 @@ address {
     font-size: 16px;
 
     a {
-      color: $gray-dark;
+      color: $gray-darker;
     }
 
     a:hover {
